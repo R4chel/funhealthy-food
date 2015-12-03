@@ -10,5 +10,11 @@ def load_data():
 def make_violation_dict(data):
     return dict(zip(data['VIOLATION CODE'], data['VIOLATION DESCRIPTION']))
 
+def unique_firsts(l):
+    le_list = [a[0] for a in set(l)]
+    for x in set(le_list):
+        le_list.remove(x)
+    return set(le_list)
+
 data = load_data()
 violation_dict = make_violation_dict(data)
