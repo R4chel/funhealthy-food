@@ -8,7 +8,7 @@ def load_data():
     return data
 
 def make_violation_dict(data):
-    return dict(zip(data['VIOLATION CODE'], data['VIOLATION DESCRIPTION'])
+    return dict(zip(data['VIOLATION CODE'], data['VIOLATION DESCRIPTION']))
 
 data = load_data()
 violation_dict = make_violation_dict(data)
